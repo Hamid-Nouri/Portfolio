@@ -2612,6 +2612,10 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+		.custom-image {
+		width: 350px; /* Adjust the width as needed */
+		height: auto; /* This ensures that the aspect ratio is maintained */
+		}
 
 /* List */
 
