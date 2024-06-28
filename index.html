@@ -72,113 +72,107 @@
 						</div>
 					</section>
 				<!-- One -->
-<section id="one" class="wrapper style2 spotlights">
-    <section id="mySection1">
-        <div class="flex-container">
-            <a href="generic1.html" class="custom-image">
-                <img src="images/Ex1.png" alt="" data-position="top center" width="400" height="400" style="margin: 0; padding: 0;" />
-            </a>
-            <div class="content">
-                <div class="inner">
-                    <p style="color: white">
-                        Have you ever wondered how many years it takes to change your level?
-                        Or perhaps you've just started and need to know what the possibilities are
-                        for entry-level positions?
-                        By analyzing over 1.4 million job postings using
-                        data analysis techniques, and leveraging machine learning,
-                        the 'required years of expertise' is extracted to answer
-                        these questions for you
-                    </p>
-                    <ul class="actions">
-                        <li><a href="generic1.html" class="button" style="background-color: black; color: white; font-size: 10px;">Learn more</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="mySection2">
-        <div class="flex-container">
-            <a href="generic2.html" class="custom-image"><img src="images/2D-atoms.jpg" alt="" data-position="top center" width="400" height="400" /></a>
-            <div class="content">
-                <div class="inner">
-                    <h2>Materials Classification</h2>
-                    <p style="color: white">
-                        Is there a way to classify over 3000 materials based on their differing properties?
-                        The power of data-driven insights provides a definitive answer to this question,
-                        with a focus on magnetic properties
-                    </p>
-                    <ul class="actions">
-                        <li><a href="generic2.html" class="button" style="background-color: black; color: white; font-size: 10px;">Learn more</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="mySection3">
-        <div class="flex-container">
-            <a href="generic3.html" class="custom-image">
-                <img src="images/Flowchart.png" alt="" width="400" height="400" />
-            </a>
-            <div class="content">
-                <div class="inner">
-                    <h2>2D Magnon Topology</h2>
-                    <p style="color: white">
-                        When it comes to finding new approaches for addressing missing values,
-                        why not consider creating an efficient workflow to calculate them accurately?
-                        With this method,
-                        you can even generalize the approach to be applicable to any other magnonic material
-                    </p>
-                    <ul class="actions">
-                        <li><a href="generic3.html" class="button" style="background-color: black; color: white; font-size: 10px;">Learn more</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-</section>
+					<section id="one" class="wrapper style2 spotlights">
+						<section id="mySection1">
+							<a href="generic1.html" class="custom-image">
+            								<img src="images/Ex1.png" alt="" data-position="top center" width="400" height="400" style="margin: 0; padding: 0;" />
+        							</a>
+							<div class="content">
+								<div class="inner">
+									<head>
+										<style>
+											.star-rating {
+												display: inline-block;
+												font-size: 0;
+											}
+											.star-rating-container {
+												display: flex;
+												align-items: center; /* Vertically align content */
+											}
+											.star-rating-container::before {
+												content: "Level of Expertise ";
+												font-size: 25px;
+												color: white;
+												margin-right: 10px;
+											}
+											.star-rating::after {
+												content: "\2605\2605\2605\2605\2605"; /* Unicode star character */
+												font-size: 24px;
+												color: #f1c40f; /* Filled star color */
+												width: 0;
+												overflow: hidden;
+												display: inline-block;
+												white-space: nowrap;
+												animation: fill-stars 2s infinite alternate;
+											}
 
-<style>
-    .wrapper {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; /* Align items to the start (left) */
-    }
-
-    .flex-container {
-        display: flex;
-        align-items: flex-start; /* Align items at the start vertically */
-        gap: 1cm; /* 1 cm space between image and content */
-    }
-
-    .custom-image {
-        flex-shrink: 0; /* Prevent the image from shrinking */
-        margin: 0; /* Remove any default margin */
-        padding: 0; /* Remove any default padding */
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        gap: 10px; /* Space between star rating and text */
-        flex: 1;
-    }
-
-    .inner {
-        max-width: 100%; /* Ensure the content doesn't exceed the width */
-    }
-
-    .actions {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .actions li {
-        margin-right: 10px;
-    }
-</style>
+											@keyframes fill-stars {
+												0% {
+													width: 0;
+												}
+												100% {
+													width: 100%;
+												}
+											}
+										</style>
+									</head>
+									<p style="color: white">
+										Have you ever wondered how many years it takes to change your level?
+										Or perhaps you've just started and need to know what the possibilities are
+										for entry-level positions?
+										By analyzing over 1.4 million job postings using
+										data analysis techniques, and leveraging machine learning,
+										the 'required years of expertise' is extracted to answer 
+										these questions for you
+									</p>
+									<ul class="actions">
+										<li><a href="generic1.html" class="button" style="background-color: black; color: white; font-size: 10px;">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					        <section id="mySection2">
+							<a href="generic2.html" class="custom-image"><img src="images/2D-atoms.jpg" alt="" data-position="top center" width="400" height="400" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Materials Classification</h2>
+									<!--ul style="color: white; list-style-type: disc;">
+										<li style="margin-bottom: 5px;">Main Achievement: Classifying over 3000 materials based on properties</li>
+										<li style="margin-bottom: 5px;">Data Collection: API + Jupyter Notebook</li>
+										<li style="margin-bottom: 5px;">Data Cleaning: Pandas + Numpy + Scipy + Excel</li>
+										<li style="margin-bottom: 5px;">Data Visualization: Tableau + Matplotlib</li>
+									</ul-->
+									<p style="color: white">
+									Is there a way to classify over 3000 materials based on their differing properties?
+									The power of data-driven insights provides a definitive answer to this question,
+									with a focus on magnetic properties									
+									</p>
+									<ul class="actions">
+										<li><a href="generic2.html" class="button"style="background-color: black; color: white; font-size: 10px;">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section id="mySection3">
+							<a href="generic3.html" class="custom-image" >
+								<img src="images/Flowchart.png" alt="" width="400" height="400" />
+							</a>							
+							
+							<div class="content">
+								<div class="inner">
+									<h2>2D Magnon Topology</h2>
+									<p style="color: white">
+										When it comes to finding new approaches for addressing missing values,
+										why not consider creating an efficient workflow to calculate them accurately?
+										With this method,
+										you can even generalize the approach to be applicable to any other magnonic material
+									<ul class="actions">
+										<li><a href="generic3.html" class="button"style="background-color: black; color: white; font-size: 10px;">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
 
 				<!-- Two -->
 					<section id="two" class="wrapper style5 fade-up">
