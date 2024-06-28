@@ -101,7 +101,7 @@
         .flex-container {
             display: flex;
             align-items: flex-start; /* Align items at the start vertically */
-            gap: 20px; /* Space between image and content */
+            gap: 0; /* No extra gap needed here since we're using margin-left on the content */
         }
 
         .custom-image {
@@ -114,7 +114,7 @@
             display: flex;
             flex-direction: column;
             gap: 10px; /* Space between star rating and text */
-            margin-left: 20px; /* Add margin to move content to the right */
+            margin-left: 1cm; /* Add 1 cm margin to move content to the right */
         }
 
         .star-rating {
@@ -153,8 +153,13 @@
                 width: 100%;
             }
         }
+
+        .shifted-text {
+            /* No additional margin-left needed here, the container handles it */
+        }
     </style>
-</section>	
+</section>
+	
 					<section id="mySection2">
 							<a href="generic2.html" class="custom-image"><img src="images/2D-atoms.jpg" alt="" data-position="top center" width="400" height="400" /></a>
 							<div class="content">
